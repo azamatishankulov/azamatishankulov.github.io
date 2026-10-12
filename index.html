@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304070d'/%3E%3Cpath d='M8 10l8 6-8 6' fill='none' stroke='%237cc4ff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 23h7' stroke='%237cc4ff' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
 <title>Azamat Ishankulov Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -278,6 +279,7 @@ button{font:inherit;color:inherit}
       <span class="label" id="copyStatus" role="status"></span>
     </div>
     <div class="links-row">
+      <a href="https://github.com/azamatishankulov" target="_blank" rel="noopener">github</a>
       <a href="https://www.linkedin.com/in/azamat-ishankulov-4839913a2/" target="_blank" rel="noopener">linkedin</a>
       <a href="mailto:ishankulov.azamat13@gmail.com">personal email</a>
     </div>
@@ -483,7 +485,7 @@ var COMMANDS={
   projects:function(){return PROJECTS.map(function(p){return pad(p.id,11)+pad(p.status,13)+p.tags.slice(0,3).join(' · ')}).concat(['','try: open ichat'])},
   skills:function(){return GROUPS.map(function(g){return pad(g.name,18)+g.items.join(', ')}).concat(['','try: filter react'])},
   now:function(){return NOW.map(function(n){return pad(n.label,14)+n.title})},
-  contact:function(){return ['email     '+$('#email').textContent,'linkedin  linkedin.com/in/azamat-ishankulov-4839913a2','personal   ishankulov.azamat13@gmail.com']},
+  contact:function(){return ['email     '+$('#email').textContent,'github    github.com/azamatishankulov','linkedin  linkedin.com/in/azamat-ishankulov-4839913a2','personal   ishankulov.azamat13@gmail.com']},
   clear:function(){out.textContent='';return []},
   open:function(a){
     var p=findProject(a[0]);
